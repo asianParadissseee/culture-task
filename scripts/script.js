@@ -29,6 +29,15 @@ async function getCards() {
         document.getElementById('closeModal').addEventListener('click', () => {
             document.getElementById('modal').style.display = 'none';
         });
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === "Escape") {
+                closeModal();
+            }
+        });
     } catch (e) {
         console.log(`server error by products: ${e}`)
     }
