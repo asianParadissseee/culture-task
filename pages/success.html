@@ -6,8 +6,23 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-Успех
+<div class="flex justify-center items-center flex-col gap-3">
+    <h1 class="font-6xl text-gray-800 opacity-0.5 text-center mt-20 font-bold">
+        Спасибо за заказ
+    </h1>
+    <button class="px-10 py-4 bg-gray-200 rounded text-black pointer" onclick="getHome()">
+        Вернуться домой
+    </button>
+</div>
+<script>
+
+    function getHome() {
+       return  window.location.href = "./culture-task/index.html"
+    }
+
+</script>
 </body>
 </html>
