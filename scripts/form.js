@@ -28,7 +28,6 @@ document.getElementById('form').addEventListener('submit', function (e) {
         .then(response => response.json())
         .then(data => {
             if (data.success) {
-                // Сохраняем данные формы в localStorage как "отправленные"
                 localStorage.setItem(formDataJSON, true);
                 window.location.href = "../pages/success.html"
             } else {
